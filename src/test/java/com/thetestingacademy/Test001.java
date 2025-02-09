@@ -6,7 +6,7 @@ public class Test001 {
         System.out.println("Rest Assured Test Case");
         System.out.println("GET Request Demo");
 
-        //     Gherkins Syntax
+        //     Gherkins Syntax...
 
         //     given() - url,headers,body or payload
         //     When() - http methods - get, post,patch , put ,delete.
@@ -18,8 +18,8 @@ public class Test001 {
                         .basePath("/booking/1").log().all()
                 .when()
                         .get()
-                .then().log().all()
-                        .statusCode(200);
+                .then()
+                        .statusCode(200).log().all();
     }
 
 }
